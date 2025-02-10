@@ -1,0 +1,900 @@
+* {
+    box-sizing: border-box;
+    font-family: "Red Hat Text", serif;
+}
+
+body {
+    margin-left: 10%;
+    margin-top: 5%;
+    display: grid;
+    grid-template-areas: 'main aside';
+    
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: 'dessert . .'
+                        'waffle creme macaron'
+                        'tiramisu baklava meringue'
+                        'cake caramel panna';
+   
+    
+}
+
+main h1 {
+    grid-area: dessert;
+}
+
+
+.waffle {
+    grid-area: waffle;
+
+}
+
+.waffle img {
+    width: 50%;
+    border-radius: 5px;
+}
+
+.waffle button {
+    border-radius: 15px;
+    border: none;
+    padding: 2%;
+    position: relative;
+    right: 42%;
+    background-color: hsl(20, 50%, 98%);
+    border: hsl(12, 20%, 44%) 1px solid;
+    cursor: pointer;
+}
+
+
+.waffle button i {
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.waffle .handle {
+    border: 1px solid hsl(12, 20%, 44%);
+    width: 30%;
+    height: 8%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+    position: relative;
+    bottom: 20px;
+    left: 40px;
+    display: none;
+    background-color: rgb(255, 166, 0);
+}
+
+.waffle .handle i {
+    color: hsl(12, 20%, 44%);
+    cursor: pointer;
+    
+}
+
+.waffle h5 {
+    font-weight: 100;
+}
+
+.waffle h4 {
+    position: relative;
+    bottom: 2.5%;
+}
+
+.waffle span {
+    position: relative;
+    bottom: 5%;
+    color: hsl(14, 86%, 42%);
+}
+
+.creme {
+    grid-area: creme;
+    position: relative;
+    right: 40%;
+    
+}
+
+.creme img {
+    width: 62%;
+    border-radius: 5px;
+}
+
+.creme button {
+    border-radius: 15px;
+    border: none;
+    padding: 2%;
+    position: relative;
+    right: 48%;
+    background-color: hsl(20, 50%, 98%);
+    border: hsl(12, 20%, 44%) 1px solid;
+    cursor: pointer;
+}
+
+.creme button i {
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.creme .handle {
+    border: 1px solid hsl(12, 20%, 44%);
+    width: 30%;
+    height: 8%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+    position: relative;
+    bottom: 20px;
+    left: 40px;
+    display: none;
+    background-color: rgb(255, 166, 0);
+}
+
+.creme .handle i {
+    color: hsl(12, 20%, 44%);
+    cursor: pointer;
+    
+}
+
+.creme h5 {
+    font-weight: 100;
+}
+
+.creme h4 {
+    position: relative;
+    bottom: 2.5%;
+}
+
+.creme span {
+    position: relative;
+    bottom: 5%;
+    color: hsl(14, 86%, 42%);
+}
+
+.macaron {
+    grid-area: macaron;
+    position: relative;
+    right: 60%;
+    
+}
+
+.macaron img {
+    width: 62%;
+    border-radius: 5px;
+}
+
+.macaron button {
+    border-radius: 15px;
+    border: none;
+    padding: 2%;
+    position: relative;
+    right: 48%;
+    background-color: hsl(20, 50%, 98%);
+    border: hsl(12, 20%, 44%) 1px solid;
+    cursor: pointer;
+}
+
+.macaron button i {
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.macaron .handle {
+    border: 1px solid hsl(12, 20%, 44%);
+    width: 30%;
+    height: 8%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+    position: relative;
+    bottom: 20px;
+    left: 40px;
+    display: none;
+    background-color: rgb(255, 166, 0);
+}
+
+.macaron .handle i {
+    color: hsl(12, 20%, 44%);
+    cursor: pointer;
+    
+}
+
+.macaron h5 {
+    font-weight: 100;
+}
+
+.macaron h4 {
+    position: relative;
+    bottom: 2.5%;
+}
+
+.macaron span {
+    position: relative;
+    bottom: 5%;
+    color: hsl(14, 86%, 42%);
+}
+
+.tiramisu {
+    grid-area: tiramisu;
+    
+}
+
+.tiramisu img {
+    width: 50%;
+    border-radius: 5px;
+}
+
+.tiramisu button {
+    border-radius: 15px;
+    border: none;
+    padding: 2%;
+    position: relative;
+    right: 42%;
+    background-color: hsl(20, 50%, 98%);
+    border: hsl(12, 20%, 44%) 1px solid;
+    cursor: pointer;
+}
+
+.tiramisu button i {
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.tiramisu .handle {
+    border: 1px solid hsl(12, 20%, 44%);
+    width: 30%;
+    height: 8%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+    position: relative;
+    bottom: 20px;
+    left: 40px;
+    display: none;
+    background-color: rgb(255, 166, 0);
+}
+
+.tiramisu .handle i {
+    color: hsl(12, 20%, 44%);
+    cursor: pointer;
+    
+}
+
+.tiramisu h5 {
+    font-weight: 100;
+}
+
+.tiramisu h4 {
+    position: relative;
+    bottom: 2.5%;
+}
+
+.tiramisu span {
+    position: relative;
+    bottom: 5%;
+    color: hsl(14, 86%, 42%);
+}
+
+.baklava {
+    grid-area: baklava;
+    position: relative;
+    right: 40%;
+    
+}
+
+.baklava img {
+    width: 62%;
+    border-radius: 5px;
+}
+
+.baklava button {
+    border-radius: 15px;
+    border: none;
+    padding: 2%;
+    position: relative;
+    right: 48%;
+    background-color: hsl(20, 50%, 98%);
+    border: hsl(12, 20%, 44%) 1px solid;
+    cursor: pointer;
+}
+
+.baklava button i {
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.baklava .handle {
+    border: 1px solid hsl(12, 20%, 44%);
+    width: 30%;
+    height: 8%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+    position: relative;
+    bottom: 20px;
+    left: 40px;
+    display: none;
+    background-color: rgb(255, 166, 0);
+}
+
+.baklava .handle i {
+    color: hsl(12, 20%, 44%);
+    cursor: pointer;
+    
+}
+
+.baklava h5 {
+    font-weight: 100;
+}
+
+.baklava h4 {
+    position: relative;
+    bottom: 2.5%;
+}
+
+.baklava span {
+    position: relative;
+    bottom: 5%;
+    color: hsl(14, 86%, 42%);
+}
+
+.meringue {
+    grid-area: meringue;
+    position: relative;
+    right: 60%;
+    
+}
+
+.meringue img {
+    width: 62%;
+    border-radius: 5px;
+}
+
+.meringue button {
+    border-radius: 15px;
+    border: none;
+    padding: 2%;
+    position: relative;
+    right: 48%;
+    background-color: hsl(20, 50%, 98%);
+    border: hsl(12, 20%, 44%) 1px solid;
+    cursor: pointer;
+}
+
+.meringue button i {
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.meringue .handle {
+    border: 1px solid hsl(12, 20%, 44%);
+    width: 30%;
+    height: 8%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+    position: relative;
+    bottom: 20px;
+    left: 40px;
+    display: none;
+    background-color: rgb(255, 166, 0);
+}
+
+.meringue .handle i {
+    color: hsl(12, 20%, 44%);
+    cursor: pointer;
+    
+}
+.meringue h5 {
+    font-weight: 100;
+}
+
+.meringue h4 {
+    position: relative;
+    bottom: 2.5%;
+}
+
+.meringue span {
+    position: relative;
+    bottom: 5%;
+    color: hsl(14, 86%, 42%);
+}
+
+.cake {
+    grid-area: cake;
+}
+
+.cake img {
+    width: 50%;
+    border-radius: 5px;
+}
+
+.cake button {
+    border-radius: 15px;
+    border: none;
+    padding: 2%;
+    position: relative;
+    right: 42%;
+    background-color: hsl(20, 50%, 98%);
+    border: hsl(12, 20%, 44%) 1px solid;
+    cursor: pointer;
+}
+
+.cake button i {
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.cake .handle {
+    border: 1px solid hsl(12, 20%, 44%);
+    width: 30%;
+    height: 8%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+    position: relative;
+    bottom: 20px;
+    left: 40px;
+    display: none;
+    background-color: rgb(255, 166, 0);
+}
+
+.cake .handle i {
+    color: hsl(12, 20%, 44%);
+    cursor: pointer;
+    
+}
+
+.cake h5 {
+    font-weight: 100;
+}
+
+.cake h4 {
+    position: relative;
+    bottom: 2.5%;
+}
+
+.cake span {
+    position: relative;
+    bottom: 5%;
+    color: hsl(14, 86%, 42%);
+}
+
+.caramel {
+    grid-area: caramel;
+    position: relative;
+    right: 40%;
+}
+
+.caramel img {
+    width: 62%;
+    border-radius: 5px;
+}
+
+.caramel button {
+    border-radius: 15px;
+    border: none;
+    padding: 2%;
+    position: relative;
+    right: 48%;
+    background-color: hsl(20, 50%, 98%);
+    border: hsl(12, 20%, 44%) 1px solid;
+    cursor: pointer;
+}
+
+.caramel button i {
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.caramel .handle {
+    border: 1px solid hsl(12, 20%, 44%);
+    width: 30%;
+    height: 8%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+    position: relative;
+    bottom: 20px;
+    left: 40px;
+    display: none;
+    background-color: rgb(255, 166, 0);
+}
+
+.caramel .handle i {
+    color: hsl(12, 20%, 44%);
+    cursor: pointer;
+    
+}
+
+.caramel h5 {
+    font-weight: 100;
+}
+
+.caramel h4 {
+    position: relative;
+    bottom: 2.5%;
+}
+
+.caramel span {
+    position: relative;
+    bottom: 5%;
+    color: hsl(14, 86%, 42%);
+}
+
+.panna {
+    grid-area: panna;
+    position: relative;
+    right: 60%;
+}
+
+.panna img {
+    width: 62%;
+    border-radius: 5px;
+}
+
+.panna button {
+    border-radius: 15px;
+    border: none;
+    padding: 2%;
+    position: relative;
+    right: 48%;
+    background-color: hsl(20, 50%, 98%);
+    border: hsl(12, 20%, 44%) 1px solid;
+    cursor: pointer;
+}
+
+.panna button i {
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.panna .handle {
+    border: 1px solid hsl(12, 20%, 44%);
+    width: 30%;
+    height: 8%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+    position: relative;
+    bottom: 20px;
+    left: 40px;
+    display: none;
+    background-color: rgb(255, 166, 0);
+}
+
+.panna .handle i {
+    color: hsl(12, 20%, 44%);
+    cursor: pointer;
+    
+}
+
+.panna h5 {
+    font-weight: 100;
+}
+
+.panna h4 {
+    position: relative;
+    bottom: 2.5%;
+}
+
+.panna span {
+    position: relative;
+    bottom: 5%;
+    color: hsl(14, 86%, 42%);
+}
+
+aside {
+    grid-area: aside;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 90%;
+    height: 100%;
+    padding: 5%;
+    position: relative;
+    right: 60%;
+    top: 10%;
+}
+
+aside h2 {
+    color: hsl(14, 86%, 42%);
+}
+
+@media (max-width: 768px) {
+
+  
+    body {
+        margin: 5% auto;
+        display: block;
+        max-width: 100%;
+    }
+
+   
+    main {
+        display: block;
+    }
+
+    
+    main h1 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .waffle, .creme, .macaron, .tiramisu, .baklava, .meringue, .cake, .caramel, .panna {
+        width: 80%;
+        margin: 0 auto 20px auto;  
+        text-align: center;
+    }
+
+    .waffle img, .tiramisu img, .cake img {
+        width: 100%;
+    } 
+    
+    .creme img, .baklava img, .caramel img  {
+        width: 100%;
+        margin-left: 50%;
+    } 
+    .macaron img, .meringue img, .panna img  {
+        width: 100%;
+        margin-left: 75%;
+    } 
+
+
+    .waffle button, .tiramisu button, .cake button  {
+        width: 60%;
+        padding: 10px;
+        margin: 10px 60%;
+        display: block;
+        font-size: 1rem;
+    }
+     .creme button, .baklava button, .caramel button {
+        width: 60%;
+        padding: 10px;
+        margin: 10px 115%;
+        display: block;
+        font-size: 1rem;
+
+     } .macaron button, .meringue button, .panna button {
+        width: 60%;
+        padding: 10px;
+        margin: 10px 140%;
+        display: block;
+        font-size: 1rem;
+     }
+
+     .macaron h5, .meringue h5, .panna h5 {
+        position: relative;
+        left: 75%;
+     }
+
+     .macaron h4, .meringue h4, .panna h4 {
+        position: relative;
+        left: 75%;
+     }
+
+     .macaron span, .meringue span, .panna span {
+        position: relative;
+        left: 75%;
+     }
+
+     
+     .creme h5, .baklava h5, .caramel h5 {
+        position: relative;
+        left: 50%;
+     }
+
+     .creme h4, .baklava h4, .caramel h4 {
+        position: relative;
+        left: 50%;
+     }
+
+     .creme span, .baklava span, .caramel span {
+        position: relative;
+        left: 50%;
+     }
+
+
+
+    .waffle .handle {
+        width: 50%;
+        margin: 15px 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+
+    .waffle .handle i {
+        cursor: pointer;
+        margin: 0 50px;
+        font-size: 1.5rem;
+    }
+
+    .creme .handle {
+        width: 50%;
+        margin: 15px 65%;
+        display: grid;
+        grid-template-areas: 'minus span plus';
+        display: none;
+       
+    }
+    .creme .handle #minus {
+        grid-area: minus;
+    }
+
+    .creme .handle #plus {
+        grid-area: plus;
+    }
+
+    .creme .handle span {
+        grid-area: span;
+    }
+
+
+    .macaron .handle {
+        width: 50%;
+        margin: 15px 87%;
+        display: grid;
+        grid-template-areas: 'minus span plus';
+        display: none;
+       
+    }
+    .macaron .handle #minus {
+        grid-area: minus;
+    }
+
+    .macaron .handle #plus {
+        grid-area: plus;
+    }
+
+    .macaron .handle span {
+        grid-area: span;
+    }
+
+    .tiramisu .handle {
+        width: 50%;
+        margin: 15px 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+
+    .tiramisu .handle i {
+        cursor: pointer;
+        margin: 0 50px;
+        font-size: 1.5rem;
+    }
+
+    
+    .cake .handle {
+        width: 50%;
+        margin: 15px 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+
+    .cake .handle i {
+        cursor: pointer;
+        margin: 0 50px;
+        font-size: 1.5rem;
+    }
+
+
+    .meringue .handle {
+        width: 50%;
+        margin: 15px 87%;
+        display: grid;
+        grid-template-areas: 'minus span plus';
+        display: none;
+       
+    }
+    .meringue .handle #minus {
+        grid-area: minus;
+    }
+
+    .meringue .handle #plus {
+        grid-area: plus;
+    }
+
+    .meringue .handle span {
+        grid-area: span;
+    }
+
+    .caramel .handle {
+        width: 50%;
+        margin: 15px 65%;
+        display: grid;
+        grid-template-areas: 'minus span plus';
+       
+    }
+    .caramel .handle #minus {
+        grid-area: minus;
+    }
+
+    .caramel.handle #plus {
+        grid-area: plus;
+    }
+
+    .caramel.handle span {
+        grid-area: span;
+    }
+
+    .panna .handle {
+        width: 50%;
+        margin: 15px 87%;
+        display: grid;
+        grid-template-areas: 'minus span plus';
+        display: none;
+       
+    }
+    .panna .handle #minus {
+        grid-area: minus;
+    }
+
+    .panna .handle #plus {
+        grid-area: plus;
+    }
+
+    .panna .handle span {
+        grid-area: span;
+    }
+
+    .baklava .handle {
+        width: 50%;
+        margin: 15px 63%;
+        display: grid;
+        grid-template-areas: 'minus span plus';
+        display: none;
+       
+    }
+    .baklava .handle #minus {
+        grid-area: minus;
+    }
+
+    .baklava .handle #plus {
+        grid-area: plus;
+    }
+
+    .baklava .handle span {
+        grid-area: span;
+    }
+
+
+
+    aside {
+        width: 90%;
+        padding: 5%;
+        margin-top: 20px;
+        margin-left: 65%;
+        background-color: #f4f4f4;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    aside h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    aside p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+}
+
